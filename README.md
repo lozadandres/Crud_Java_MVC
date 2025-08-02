@@ -43,4 +43,4 @@ Este proyecto es una aplicación de escritorio desarrollada en Java que sigue el
 ## Colaboradores
 
 - Andrés Lozada : [GitHub](https://github.com/lozadandres)
-- Carlos Quintero :
+- Carlos Quintero : [GitHub](https://github.com/Carlitos-quintero)
