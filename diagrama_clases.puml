@@ -1,0 +1,111 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' Clases del modelo
+class Persona {
+    - nombre: String
+    - apellido: String
+    - edad: int
+    ...
+}
+
+class Cliente {
+    ...
+}
+Cliente --> Persona
+
+class AgenteComercial {
+    ...
+}
+AgenteComercial --> Persona
+
+class Propietario {
+    ...
+}
+Propietario --> Persona
+
+class BaseServicio {
+    ...
+}
+
+class ClienteServicio {
+    ...
+}
+ClienteServicio --> BaseServicio
+
+class AgenteComercialServicio {
+    ...
+}
+AgenteComercialServicio --> BaseServicio
+
+class PropietarioServicio {
+    ...
+}
+PropietarioServicio --> BaseServicio
+
+interface ICrudServicio {
+    + crear()
+    + leer()
+    + actualizar()
+    + eliminar()
+}
+BaseServicio ..|> ICrudServicio
+
+class CsvUtil {
+    + leerCSV()
+    + escribirCSV()
+}
+
+class PostgresConexion {
+    + conectar()
+    + desconectar()
+}
+
+' Clases del controlador
+class VentanaPrincipalControlador {
+    ...
+}
+
+class AgenteComercialControlador {
+    ...
+}
+
+class PropietarioControlador {
+    ...
+}
+
+' Clases de la vista
+class VentanaPrincipal {
+    ...
+}
+
+class FormularioCliente {
+    ...
+}
+
+class FormularioAgenteComercial {
+    ...
+}
+
+class FormularioPropietario {
+    ...
+}
+
+class VentanaAgentesComerciales {
+    ...
+}
+
+class VentanaPropietarios {
+    ...
+}
+
+' Relaciones adicionales
+VentanaPrincipalControlador --> VentanaPrincipal
+AgenteComercialControlador --> VentanaAgentesComerciales
+PropietarioControlador --> VentanaPropietarios
+
+VentanaPrincipalControlador --> ClienteServicio
+AgenteComercialControlador --> AgenteComercialServicio
+PropietarioControlador --> PropietarioServicio
+
+@enduml
