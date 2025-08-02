@@ -12,7 +12,7 @@ public class PostgresConexion {
         String puerto = "5432";
         String nombreBD = "inmueble";
         String usuario = "postgres";
-        String pass = "Bdmmlozada2@";
+        String pass = "";
         String driver = "org.postgresql.Driver";
         String url = "jdbc:postgresql://" + host + ":" + puerto + "/" + nombreBD;
         try {
