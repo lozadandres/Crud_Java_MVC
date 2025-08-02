@@ -36,6 +36,10 @@ Este proyecto es una aplicación de escritorio desarrollada en Java que sigue el
 4.  **Ejecutar la aplicación:**
     - Construir y ejecutar el proyecto desde el IDE.
 
+## Captura de Pantalla
+
+![Captura de pantalla de la aplicación](Captura1.png)
+
 ## Colaboradores
 
 - Andrés Lozada
