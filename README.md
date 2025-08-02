@@ -39,3 +39,4 @@ Este proyecto es una aplicación de escritorio desarrollada en Java que sigue el
 ## Colaboradores
 
 - Andrés Lozada
+- Carlos Quintero
